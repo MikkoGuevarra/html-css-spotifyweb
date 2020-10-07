@@ -5,7 +5,7 @@
 }
 body {
     font-family: 'Poppins', sans-serif;
-    color: white;
+    color: #b4b5b2;
 }
 
 ul {
@@ -19,9 +19,12 @@ ul {
 
 /* -----SIDEBAR----- */
 .sidebar {
-    max-width: 250px;
+    max-width: 30%;
     background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(103,103,103,1) 35%, rgba(73,79,49,1) 100%);
     flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .logo {
@@ -33,7 +36,7 @@ ul {
 }
 
 .sidebar a {
-    color: white;
+    color: #b4b5b2;
     text-decoration: none;
 }
 
@@ -41,14 +44,38 @@ ul {
     margin-left: 10px;
 }
 
-.sidebar li {
-    margin-left: 30px;
+.sidebar .list-menu {
+    padding-left: 30px;
     padding-top: 10px;
 }
 
+.sidebar .list-menu:hover,
+.recents .list-recents:hover {
+    border-left: 3px solid #30d52a;
+}
 
+.sidebar .list-menu:hover a,
+.recents .list-recents:hover a {
+    color: #fff;
+}
 
+.recents {
+    margin-top: 30px;
+}
 
+.recents p {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.list-recents {
+    padding-top: 10px;
+    padding-left: 30px;
+}
+
+.bottom-sidebar {
+
+}
 
 
 /* -----FINE SIDEBAR----- */
