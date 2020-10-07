@@ -17,6 +17,16 @@ a {
     text-decoration: none;
 }
 
+h1 {
+    font-size: 36px;
+    color: white;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
 .main-container {
     display: flex;
     height: calc(100vh - 100px);
@@ -145,12 +155,33 @@ header {
     margin-left: 20px;
 }
 
+#desktop-logo {
+    display: none;
+}
+
 /* -----FINE HEADER PART----- */
 
-#creato-per-te {
-    height: 200px;
-    background-color: red;
+/* -----INIZIO FIRST SECTION----- */
+
+.list-of-artists {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 }
+
+.list-of-artists img {
+    max-width: 200px;
+}
+
+.list-of-artists img:not(:last-child) {
+    margin-right: 10px;
+}
+
+.img-rounded img {
+    border-radius: 50%;
+}
+
+/* -----FINE FIRST SECTION----- */
 
 footer {
     height: 100px;
@@ -173,6 +204,14 @@ footer {
 
     .logo img {
         max-width: 150px;
+    }
+
+    #desktop-logo {
+        display: block;
+    }
+
+    .for-mobile {
+        display: none;
     }
 
 }
