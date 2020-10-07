@@ -8,16 +8,50 @@ body {
     color: white;
 }
 
+ul {
+    list-style: none;
+}
+
 .main-container {
     display: flex;
     height: calc(100vh - 100px);
 }
 
+/* -----SIDEBAR----- */
 .sidebar {
-    width: 150px;
-    background-color: yellow;
+    max-width: 250px;
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(103,103,103,1) 35%, rgba(73,79,49,1) 100%);
     flex-shrink: 0;
 }
+
+.logo {
+    margin: 40px;
+}
+
+.logo img {
+    max-width: 150px;
+}
+
+.sidebar a {
+    color: white;
+    text-decoration: none;
+}
+
+.sidebar span {
+    margin-left: 10px;
+}
+
+.sidebar li {
+    margin-left: 30px;
+    padding-top: 10px;
+}
+
+
+
+
+
+
+/* -----FINE SIDEBAR----- */
 
 main {
     flex-grow: 1;
