@@ -26,7 +26,6 @@ h1 {
 .container {
     max-width: 900px;
     margin: 0 auto;
-    border: 1px solid black;
 }
 
 .main-container {
@@ -181,10 +180,29 @@ header {
 .list-of-artists {
     width: 150px;
     height: 150px;
-    border: 1px solid black;
     /* flex-grow: 1; */
     flex-shrink: 0;
     margin: 10px;
+    text-align: center;
+}
+
+.img-singer {
+    text-align: center;
+}
+
+.img-singer img {
+    max-width: 120px;
+    filter: grayscale(60%);
+}
+
+.img-circle {
+    border-radius: 50%;
+}
+
+.list-of-artists:hover img {
+    transform: scale(1.2);
+    filter: grayscale(0);
+
 }
 
 
