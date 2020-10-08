@@ -53,10 +53,12 @@ h1 {
     max-width: 70px;
 }
 
-#for-mobile {
+#for-mobile img {
     max-width: 50px;
-    background-color: white;
-    border-radius: 50%;
+}
+
+#for-mobile {
+    text-align: center;
 }
 
 
@@ -202,7 +204,10 @@ header {
 .list-of-artists:hover img {
     transform: scale(1.2);
     filter: grayscale(0);
+}
 
+#recenti {
+    margin-bottom: 50px;
 }
 
 
@@ -404,6 +409,14 @@ input[type=range]:focus::-webkit-slider-runnable-track {
 
     .song-time[type=range] {
       width: 300px;
+    }
+
+    .player-icons a {
+        font-size: 18px;
+    }
+
+    #play-pause {
+        font-size: 25px;
     }
 
 
