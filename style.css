@@ -24,7 +24,7 @@ h1 {
 }
 
 .container {
-    max-width: 100%;
+    max-width: 900px;
     margin: 0 auto;
     border: 1px solid black;
 }
@@ -172,30 +172,21 @@ header {
 /* -----FINE HEADER PART----- */
 
 /* -----INIZIO FIRST SECTION----- */
+.list-cont  {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
 
 .list-of-artists {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+    /* flex-grow: 1; */
+    flex-shrink: 0;
+    margin: 10px;
 }
 
-.list-of-artists img {
-    max-width: 200px;
-    margin-right: 25px;
-}
-
-.list-of-artists img:not(:last-child) {
-    margin-right: 10px;
-}
-
-
-.img-rounded img {
-    border-radius: 50%;
-}
-
-.img-rounded {
-    flex-grow: 1;
-}
 
 /* -----FINE FIRST SECTION----- */
 
