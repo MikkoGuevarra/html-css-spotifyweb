@@ -207,7 +207,7 @@ footer {
     display: flex;
 }
 
-.foot-left, .foot-right {
+.foot-left {
     width: 25%;
     display: flex;
     align-items: center;
@@ -219,11 +219,6 @@ footer {
 
 .foot-left img {
     max-width: 30px;
-}
-
-.foot-center {
-    flex-grow: 1;
-    background-color: gold;
 }
 
 .song-description {
@@ -244,20 +239,28 @@ footer {
     margin: 0 10px;
 }
 
-#vol {
+#vol[type=range] {
     width: 80px;
     height: 10px;
     background-color: transparent;
+    -webkit-appearance: none;
+    margin: 10px 0;
 }
+
+.foot-right {
+    display: none;
+}
+
 
 /* -----input----- */
 
-/* input[type=range] {
+.song-time[type=range] {
   height: 27px;
   -webkit-appearance: none;
   margin: 10px 0;
-  width: 100%;
-} */
+  width: 150px;
+}
+
 input[type=range]:focus {
   outline: none;
 }
@@ -297,8 +300,48 @@ input[type=range]:focus::-webkit-slider-runnable-track {
     width: 200px;
     height: 25px;
     background-color: transparent;
-
+    position: relative;
 }
+
+.foot-center {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.song-time::before {
+    content: '2:05';
+    display: inline-block;
+    position: absolute;
+    top: 7px;
+    left: -40px;
+    color: #b4b5b2;
+}
+
+.song-time::after {
+    content: '4:30';
+    display: inline-block;
+    position: absolute;
+    top: 7px;
+    right: -40px;
+    color: #b4b5b2;
+}
+
+.player-icons li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.player-icons {
+    margin-bottom: 10px;
+}
+
+.player-icons li:hover a {
+    color: white;
+}
+
 
 /* -----FINE FOOTER CENTER----- */
 
@@ -340,6 +383,21 @@ input[type=range]:focus::-webkit-slider-runnable-track {
         margin: 0 20px;
     }
 
+    .foot-right {
+        width: 25%;
+        display: flex;
+        align-items: center;
+    }
+
+    .player-icons li {
+        margin: 0 15px;
+    }
+
+    .song-time[type=range] {
+      width: 300px;
+    }
+
+
 
 }
 
@@ -355,6 +413,14 @@ input[type=range]:focus::-webkit-slider-runnable-track {
 
         .hamburger-menu {
             display: none;
+        }
+
+        .song-time[type=range] {
+          width: 500px;
+        }
+
+        .player-icons li {
+            margin: 0 30px;
         }
 
 }
