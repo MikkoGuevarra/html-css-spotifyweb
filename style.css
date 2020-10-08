@@ -18,7 +18,7 @@ a {
 }
 
 h1 {
-    font-size: 36px;
+    font-size: 28px;
     color: white;
     margin-bottom: 20px;
 }
@@ -177,6 +177,7 @@ header {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .list-of-artists {
@@ -361,6 +362,12 @@ input[type=range]:focus::-webkit-slider-runnable-track {
 
 
 /* ------MEDIAQUERY----- */
+@media all and (min-width: 552px) {
+    .list-cont {
+        justify-content: flex-start;
+    }
+
+}
 
 @media all and (min-width: 768px) {
     .icon-description {
@@ -401,6 +408,7 @@ input[type=range]:focus::-webkit-slider-runnable-track {
         width: 25%;
         display: flex;
         align-items: center;
+        justify-content: flex-end;
     }
 
     .player-icons li {
@@ -419,7 +427,9 @@ input[type=range]:focus::-webkit-slider-runnable-track {
         font-size: 25px;
     }
 
-
+    h1 {
+        font-size: 36px;
+    }
 
 }
 
